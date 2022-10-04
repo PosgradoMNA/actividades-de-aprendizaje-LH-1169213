@@ -1,0 +1,143 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "assignment01.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PosgradoMNA/actividades-de-aprendizaje-LH-1169213/blob/main/Module5_Week3_A01169213\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "LzUSMM79NR9P",
+        "outputId": "0e6cb421-1096-426a-b31a-f61d059def81",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "assignment01 for GitJobish03 and edited in git, and 18\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('assignment01 for GitJobish03 and edited in git, and 18')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Module 5: Working with Numpy arrays & simple APIs\n",
+        "## Laura Elena Hernández Mata\n",
+        "## A01169213\n",
+        "### Semana 3"
+      ],
+      "metadata": {
+        "id": "QlONEUv6tuqB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Tema 1: Numpy 1D arrays"
+      ],
+      "metadata": {
+        "id": "afgFnNUMuP7i"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Características\n",
+        "\n",
+        "*   Es similar a una lista\n",
+        "*   Tiene un tamaño fijo\n",
+        "*   Cada elemento es del mismo tipo\n",
+        "\n",
+        "```\n",
+        "# Cast the list and access via index\n",
+        "\n",
+        "import numpy as np\n",
+        "\n",
+        "a = np.array([0,1,2,3,4)]\n",
+        "\n",
+        "a[0] #El resultado que nos dará es: 0\n",
+        "\n",
+        "# Para revisar el tipo de dato se realiza lo siguiente\n",
+        "\n",
+        "type(a): numpy.ndarray\n",
+        "\n",
+        "a.dtype # El resultado es dtype(\"int64\") por ser intergers y si fuera float, sería dtype(\"float64\")\n",
+        "\n",
+        "# Para obtener el tamaño \n",
+        "\n",
+        "a.size # El resultado es 5\n",
+        "\n",
+        "# Número de dimensiones\n",
+        "\n",
+        "a.ndim # El resultado es 1\n",
+        "\n",
+        "# Tuple of intergers indicating the size of the array\n",
+        "\n",
+        "a.shape # El resultado es (5,)\n",
+        "\n",
+        "```\n"
+      ],
+      "metadata": {
+        "id": "QzyBLdgtuV3E"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Index and slicing\n",
+        "\n",
+        "```\n",
+        "c = np.array ([20,1,2,3,4)]\n",
+        "\n",
+        "# Para cambiar el primer elemento del array \n",
+        "\n",
+        "c[0]=100 # El resultado va a ser ([100,1,2,3,4)]\n",
+        "\n",
+        "# Para cambiar el cuarto elemento del array\n",
+        "\n",
+        "c[4]=0 # El resultado va a ser ([100,1,2,3,0)]\n",
+        "\n",
+        "# Para hacer un nuevo array del que ya creamos, se hace:\n",
+        "\n",
+        "d = c[1:4] # El resultado va a ser ([1,2,3,)]\n",
+        "\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "rODb-dRZw6PV"
+      }
+    }
+  ]
+}
